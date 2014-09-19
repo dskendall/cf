@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Splat!</title>
+    <link rel="stylesheet" href ="css/skydive3.css"/>
+  </head>
+
+  <body>
+    
+    <header>
+      <h1>SPLAT.</h1>
+      <h2>a freefall race to the bottom</h2>
+      <p>with our unfortunate racers Thumper the Rabbit & Gibson the Turtle</p>
+    </header>
+
+    <main>
+      <section>
+        <p>Current starting height is <span id = "heightLabel"</span></p>
+        <form id = "newHeightForm">
+          <input type = "number" id = "raceHeight" placeholder = "new start height (in meters)..." min = "1" />
+          <input type = "submit" id = "addButton" value = "Change" />
+        </form>
+
+        <div id = "newHeightButton">
+          <button href "#" id="showForm">Change starting height</button>
+        </div>
+
+        
+        <div id = "newRaceButton"><button href "#" id="startRace">Start race!</button></div>
+
+        
+        <div id = "wins">
+          <p>Thumper: <span id = "thumperWins"></span> wins  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gibson: <span id = "gibsonWins"></span> wins</p>
+      </section>
+
+      <section>
+        <div id = "raceBox">
+         <u>Race summary</u>
+          <table id = "summaryTable">
+            
+          </table>
+          <p id = "raceReport"></p>
+        </div>
+      </section>  
+
+
+
+
+      <footer>  <!-- the ground! -->
+      </footer>
+    </main>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src = "js/skydive3.js"></script>
+  </body>
+</html>

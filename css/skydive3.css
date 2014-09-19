@@ -1,0 +1,75 @@
+/* for c20 class by scott kendall*/
+
+
+body {
+  background-color: #66a6dd;
+  /*background-image: url('../img/clouds.jpg');*/
+  font-family: 'Avenir', sans-serif;
+  color: #FFF;
+}
+
+h1, h2 {
+	text-align: center;
+	text-shadow: 0px 1px #666;
+}
+
+p {
+	text-align: center;
+}
+
+#newHeightButton, #newRaceButton {
+	text-align: center;
+}
+
+#showForm, #addButton, #startRace {
+	text-align: center;
+	font-size: 24px;
+	border-radius: 20px;
+	border: 1px solid #999;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 10px;
+}
+
+
+#newHeightForm {
+	text-align: center;
+	padding: 10px;
+}
+
+#raceHeight {
+	font-size: 24px;
+	width: 340px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	height: 40px;
+}
+
+#raceBox {
+	text-align: center;
+	font-size: 24px;
+	font-weight:700;
+	text-shadow: 0px 1px #666;
+}
+
+#summaryTable {
+	width: 100%;
+	margin-left: auto; 
+  margin-right: auto;
+  /*text-align: left; */
+}
+
+
+
+footer {
+	background-image: url('../img/ground.jpg');
+	background-repeat: repeat-x;
+	height: 112px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: -99;
+	opacity: .5;
+}
+
