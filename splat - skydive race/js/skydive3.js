@@ -56,14 +56,14 @@ $(function() {
         } else {
           this.drag = this.minDrag;
         }
-      }
+      };
 
 
       this.drop = function() {
         this.distance = Math.round((this.acceleration * (1 - this.drag)) * (this.currentTime + 1));
-        this.currentTime++
+        this.currentTime++;
           return this.altitude -= this.distance;
-      }
+      };
 
       this.summary = function() {
         if (this.drag === this.maxDrag) {
@@ -71,11 +71,11 @@ $(function() {
         } else {
           return this.altitude + " m (great form!)";
         }
-      }
+      };
     }
 
-    var rabbit = new Racer("Thumper", .1, .9); //sets drag min and max
-    var turtle = new Racer("Gibson", .1, .9); //sets drag min and max
+    var rabbit = new Racer("Thumper", 0.1, 0.9); //sets drag min and max
+    var turtle = new Racer("Gibson", 0.1, 0.9); //sets drag min and max
 
     $raceBox.show();
 
@@ -90,7 +90,7 @@ $(function() {
       } else {
         break;
       }
-    };
+    }
 
 
     // determine winner
@@ -105,6 +105,6 @@ $(function() {
       gibsonWins++;
       $('span#gibsonWins').text(gibsonWins); //display initial wins
     }
-  })
+  });
 
 });
