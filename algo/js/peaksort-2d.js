@@ -1,5 +1,6 @@
 $(function() {
 
+// peak data from csv format for Isle of Man
 	peakData = [
 		["Beinn Rein", 1804],
 		["Beinn-y-Phott", 1785],
@@ -20,7 +21,7 @@ $(function() {
 
 
 	function Peak (name, elevation){
-		for (i = 0; i < 15; i++) {
+		for (i = 0; i < peakData.length; i++) {
 			this.name = peakData[i][0];
 			this.elevation = peakData[i][1];
 			this.toHTML = function (){
@@ -32,31 +33,40 @@ $(function() {
 
 	Peak();
 
-/* rework the sort, not working */
-	function sort() {
-		var len = peakData.length, // number of items in the array
-			value, // the value currently being compared
-			i, // index into unsorted section
-			j; // index into sorted section
+//rework the sort, not working 
+	function insertionSort() {
+		var value, // the value currently being compared
+			unsortedIndex, // index into unsorted section
+			sortedIndex; // index into sorted section
 
-		for (i = 0; i < len; i++) {
+		for (unsortedIndex = 0; unsortedIndex < peakData.length; unsortedIndex++) {
 			// store the current value because it may shift later
-			value = peakData[i][1];
+			value = peakData[unsortedIndex][1];
+			alert(value);
 			/*
 			* Whenever the value in the sorted section is greater than the value
 			* in the unsorted section, shift all items in the sorted section over
 			* by one. This creates space in which to insert the value.
 			*/
-			for (j = i - 1; j > -1 && peakData[j] > value; j--) {
-				peakData[j + 1] = peakData[j];
-			}
-		peakData[j + 1][1] = value;
+			for (sortedIndex = unsortedIndex; sortedIndex > 0 && value < peakData[sortedIndex-1][1]; sortedIndex--)
+				peakData[sortedIndex][1] = value;
 		}
+
 		return peakData;
 	}
+	
+	insertionSort(peakData);
+	document.write(peakData.join(" "));
+	/*		return '<li class = "peak">' + this.name + ': ' + this.elevation + ' ft </li>';
+		};
+			
+			/*
+			$('.peaks').append(this.toHTML()); //add code for nth child selector?
+			
+	
 
 	$('button').on('click', function() {
-        sort($(".peak").length - 1);
+        insertionSort();
       });
-
+*/
 });
