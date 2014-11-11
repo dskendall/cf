@@ -27,7 +27,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Assignment3" id="0UA-r9-5Mv"/>
                     <connections>
-                        <segue destination="KAh-rl-MPK" kind="show" id="8EN-1j-jly"/>
+                        <segue destination="KAh-rl-MPK" kind="show" identifier="segueToDetail" id="8EN-1j-jly"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiy-QL-A2B" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -9,7 +9,9 @@
 import UIKit
 
 class Assignment3TableViewController: UITableViewController {
-
+    
+    var people = [Person]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,7 +55,7 @@ class Assignment3TableViewController: UITableViewController {
         return self.people.count
     }
     
-    var people = [Person]()
+  
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
