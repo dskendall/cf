@@ -19,8 +19,8 @@ class Person {
         self.isStudent = isStudent
     }
 
-    func fullName() {
-        println(self.firstName + " " + self.lastName)
+    func fullName() -> String {
+         return "\(firstName) \(lastName)"
     }
 
 }

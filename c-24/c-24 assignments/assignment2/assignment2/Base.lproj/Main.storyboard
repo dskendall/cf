@@ -23,6 +23,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didPressButton:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="lv3-EV-lDx"/>
+                                    <action selector="showName:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KXr-9a-lET"/>
                                     <segue destination="d3Q-JO-x5v" kind="showDetail" id="CIh-aA-9G9"/>
                                 </connections>
                             </button>
@@ -64,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le1-ry-ug0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="493"/>
+            <point key="canvasLocation" x="1050" y="315"/>
         </scene>
     </scenes>
 </document>

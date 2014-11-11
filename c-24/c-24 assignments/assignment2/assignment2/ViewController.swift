@@ -12,12 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var myPerson = Person(firstName: "King", lastName: "Kamehameha", isStudent: false)
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
+    var myPerson = Person(firstName: "King", lastName: "Kamehameha", isStudent: false)
+    // Do any additional setup after loading the view, typically from a nib.
+
     
-    @IBAction func didPressButton(sender: UIButton) {
-        self.view.backgroundColor = UIColor.greenColor()
+    @IBAction func showName(sender: AnyObject) {
+        println(myPerson.fullName())
     }
 
 }
