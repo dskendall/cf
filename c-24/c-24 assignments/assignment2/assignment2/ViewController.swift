@@ -12,14 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var myPerson = Person(firstName: "King", lastName: "Kamehameha", isStudent: false)
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func didPressButton(sender: UIButton) {
+        self.view.backgroundColor = UIColor.greenColor()
     }
 
-
 }
-

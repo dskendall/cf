@@ -13,6 +13,7 @@
 		6905C1881A0412320097BBC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6905C1871A0412320097BBC1 /* Images.xcassets */; };
 		6905C18B1A0412320097BBC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6905C1891A0412320097BBC1 /* LaunchScreen.xib */; };
 		6905C1971A0412320097BBC1 /* assignment2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905C1961A0412320097BBC1 /* assignment2Tests.swift */; };
+		69E213261A117AFD00D5D1DB /* person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E213251A117AFD00D5D1DB /* person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6905C1901A0412320097BBC1 /* assignment2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = assignment2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6905C1951A0412320097BBC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6905C1961A0412320097BBC1 /* assignment2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment2Tests.swift; sourceTree = "<group>"; };
+		69E213251A117AFD00D5D1DB /* person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				6905C1821A0412320097BBC1 /* ViewController.swift */,
+				69E213251A117AFD00D5D1DB /* person.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6905C1831A0412320097BBC1 /* ViewController.swift in Sources */,
+				69E213261A117AFD00D5D1DB /* person.swift in Sources */,
 				6905C1811A0412320097BBC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +433,7 @@
 				6905C19C1A0412320097BBC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6905C19D1A0412320097BBC1 /* Build configuration list for PBXNativeTarget "assignment2Tests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +442,7 @@
 				6905C19F1A0412320097BBC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
