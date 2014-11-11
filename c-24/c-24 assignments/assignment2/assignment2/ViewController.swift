@@ -22,4 +22,7 @@ class ViewController: UIViewController {
         println(myPerson.fullName())
     }
 
+    @IBAction func nextViewButton(sender: AnyObject) {
+        println("view2")
+    }
 }

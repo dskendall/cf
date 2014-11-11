@@ -17,22 +17,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-d8-7br">
-                                <rect key="frame" x="45" y="43" width="57" height="39"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="45" y="43" width="74" height="39"/>
+                                <state key="normal" title="print name">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didPressButton:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="lv3-EV-lDx"/>
                                     <action selector="showName:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KXr-9a-lET"/>
-                                    <segue destination="d3Q-JO-x5v" kind="showDetail" id="CIh-aA-9G9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuE-j5-g3v">
-                                <rect key="frame" x="56" y="152" width="46" height="30"/>
+                                <rect key="frame" x="50" y="147" width="69" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label=""/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="next page">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="d3Q-JO-x5v" kind="show" id="OUW-wk-G1A"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -59,6 +61,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Test text" translatesAutoresizingMaskIntoConstraints="NO" id="Ktk-AD-Sm9">
+                                <rect key="frame" x="97" y="117" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
