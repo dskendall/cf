@@ -16,15 +16,15 @@ class Assignment3TableViewController: UITableViewController {
         super.viewDidLoad()
 
         
-        self.people = [Person(gender:"Male", name:"Brad"),
-            Person(gender:"Male", name:"Charlie"),
-            Person(gender:"Male", name:"Doug"),
-            Person(gender:"Female", name:"Polly"),
-            Person(gender:"Male", name:"Pepe"),
-            Person(gender:"Female", name:"Julie"),
-            Person(gender:"Male", name:"Cam"),
-            Person(gender:"Female", name:"Sonya"),
-            Person(gender:"Male", name:"Guid")]
+        self.people = [Person(gender: "Male", name: "Brad"),
+            Person(gender: "Male", name: "Charlie"),
+            Person(gender: "Male", name: "Doug"),
+            Person(gender: "Female", name: "Polly"),
+            Person(gender: "Male", name: "Pepe"),
+            Person(gender: "Female", name: "Julie"),
+            Person(gender: "Male", name: "Cam"),
+            Person(gender: "Female", name: "Sonya"),
+            Person(gender: "Male", name: "Guid")]
         
         // Reload the table
         self.tableView.reloadData()
@@ -43,12 +43,7 @@ class Assignment3TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
-    }
-
+   
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
@@ -60,7 +55,7 @@ class Assignment3TableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //ask for a reusable cell from the tableview, the tableview will create a new one if it doesn't have any
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
 
         // Get the corresponding candy from our candies array
         let person = self.people[indexPath.row]
@@ -68,6 +63,7 @@ class Assignment3TableViewController: UITableViewController {
         // Configure the cell...
         cell.textLabel.text = person.name
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
         return cell
     }
     

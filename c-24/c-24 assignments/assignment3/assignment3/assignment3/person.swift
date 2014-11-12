@@ -8,6 +8,8 @@
 
 import Foundation
 
+import UIKit
+
 
 struct Person {
     let gender : String
