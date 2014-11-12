@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "assignment4/ViewController.swift"
+            timestampString = "437523477.327404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "assignment4/ViewController.swift"
+            timestampString = "437525760.193867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "assignment4/DetailViewController.swift"
+            timestampString = "437525607.76153"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "DetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "assignment4.DetailViewController.selectedPerson.getter : assignment4.Person"
+                  moduleName = "assignment4"
+                  urlString = "file:///Users/dsk/Desktop/repos/cf/cf/c-24/c-24%20assignments/assignment4/assignment4/assignment4/DetailViewController.swift"
+                  timestampString = "437525855.361638"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "assignment4.DetailViewController.selectedPerson.setter : assignment4.Person"
+                  moduleName = "assignment4"
+                  urlString = "file:///Users/dsk/Desktop/repos/cf/cf/c-24/c-24%20assignments/assignment4/assignment4/assignment4/DetailViewController.swift"
+                  timestampString = "437525855.362004"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "assignment4.DetailViewController.init (assignment4.DetailViewController.Type)(style : C.UITableViewStyle) -&gt; assignment4.DetailViewController"
+                  moduleName = "assignment4"
+                  urlString = "file:///Users/dsk/Desktop/repos/cf/cf/c-24/c-24%20assignments/assignment4/assignment4/assignment4/DetailViewController.swift"
+                  timestampString = "437525855.362634"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "73">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "assignment4.DetailViewController.init (assignment4.DetailViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; assignment4.DetailViewController"
+                  moduleName = "assignment4"
+                  urlString = "file:///Users/dsk/Desktop/repos/cf/cf/c-24/c-24%20assignments/assignment4/assignment4/assignment4/DetailViewController.swift"
+                  timestampString = "437525855.362934"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "149">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "assignment4.DetailViewController.init (assignment4.DetailViewController.Type)() -&gt; assignment4.DetailViewController"
+                  moduleName = "assignment4"
+                  urlString = "file:///Users/dsk/Desktop/repos/cf/cf/c-24/c-24%20assignments/assignment4/assignment4/assignment4/DetailViewController.swift"
+                  timestampString = "437525855.363726"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "assignment4.DetailViewController.init (assignment4.DetailViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; assignment4.DetailViewController"
+                  moduleName = "assignment4"
+                  urlString = "file:///Users/dsk/Desktop/repos/cf/cf/c-24/c-24%20assignments/assignment4/assignment4/assignment4/DetailViewController.swift"
+                  timestampString = "437525855.36396"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "73">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
