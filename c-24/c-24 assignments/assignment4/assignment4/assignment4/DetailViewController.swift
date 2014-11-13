@@ -11,8 +11,10 @@ import UIKit
 class DetailViewController: UITableViewController, UITextFieldDelegate {
 
     // outlets for text field
-    @IBOutlet weak var firstNameText: UITextField!
     
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
+    @IBOutlet weak var lastNameTextField: UITextField!
     
     var selectedPerson = Person(firstName: String())
 
@@ -26,12 +28,12 @@ class DetailViewController: UITableViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         
-        self.firstNameText.delegate = self
+        self.firstNameTextField.delegate = self
         
         self.title = self.selectedPerson.firstName
         
         
-        self.firstNameText.text = self.selectedPerson.firstName
+        self.firstNameTextField.text = self.selectedPerson.firstName
         //formatting
         self.view.backgroundColor = UIColor.greenColor()
         

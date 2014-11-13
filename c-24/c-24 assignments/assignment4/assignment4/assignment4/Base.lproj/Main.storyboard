@@ -13,12 +13,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Cgy-af-gaX" kind="show" identifier="SEGUE_1" id="pNO-mW-amn"/>
+                        <segue destination="Cgy-af-gaX" kind="relationship" relationship="rootViewController" id="BqJ-2V-09c"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hi2-zY-eeu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="-966"/>
+            <point key="canvasLocation" x="544" y="-976"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZAt-1c-SVG">
@@ -32,18 +32,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pwn-Rw-CJO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="b7L-5K-aAl">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="gNB-kE-UAf">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="muQ-7f-Mxx">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gNB-kE-UAf" id="1NB-ke-cpc">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="muQ-7f-Mxx" id="Kdm-kW-yt7">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="IiM-x7-T2L" kind="show" identifier="SHOW_DETAIL" id="Vi8-kD-HLu"/>
+                                            <segue destination="IiM-x7-T2L" kind="show" identifier="SHOW_DETAIL" id="ky9-09-4g2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -53,7 +53,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ay0-c8-OcR"/>
                     <connections>
-                        <outlet property="tableView" destination="pwn-Rw-CJO" id="eUo-u3-0FH"/>
+                        <outlet property="tableView" destination="b7L-5K-aAl" id="tne-S7-Idl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1h-Yu-cFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -72,25 +72,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xU-WG-ayY">
-                                <rect key="frame" x="200.5" y="72" width="200" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Unknown.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CNb-Ta-ytz">
+                                <rect key="frame" x="200" y="195" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="wIL-6r-GcW"/>
+                                    <constraint firstAttribute="width" constant="200" id="DD0-nh-UuB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="IzF-LH-XRq"/>
+                                    <constraint firstAttribute="height" constant="200" id="atN-x1-SvF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="qUh-hP-S7g"/>
                                 </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjn-mt-CZT">
+                                <rect key="frame" x="246" y="81" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-TC-txt">
+                                <rect key="frame" x="246" y="137" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2xU-WG-ayY" firstAttribute="top" secondItem="wTM-xN-qWb" secondAttribute="bottom" constant="8" id="bXE-5Y-f86"/>
-                            <constraint firstAttribute="centerX" secondItem="2xU-WG-ayY" secondAttribute="centerX" id="n6D-xs-mn0"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="xjn-mt-CZT" id="SHc-DU-l9k"/>
+                        <outlet property="lastNameTextField" destination="kAC-TC-txt" id="wvb-Yg-FiZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFJ-ph-rMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1966" y="-958"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unknown.jpg" width="512" height="512"/>
+    </resources>
 </document>
