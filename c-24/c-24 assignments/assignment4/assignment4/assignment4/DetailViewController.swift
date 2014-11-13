@@ -17,6 +17,11 @@ class DetailViewController: UITableViewController, UITextFieldDelegate {
     var selectedPerson = Person(firstName: String())
 
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
