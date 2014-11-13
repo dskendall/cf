@@ -11,8 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var people = [Person]()
-    @IBOutlet weak var tableView: UITableView!
     
+    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
