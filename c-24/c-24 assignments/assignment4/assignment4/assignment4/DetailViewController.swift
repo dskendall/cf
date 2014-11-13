@@ -8,13 +8,16 @@
 
 import UIKit
 
-class DetailViewController: UITableViewController, UITextFieldDelegate {
+class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // outlets for text field
     
     @IBOutlet weak var firstNameTextField: UITextField!
     
     @IBOutlet weak var lastNameTextField: UITextField!
+    
+    
+    var imagePickerController = UIImagePickerController()
     
     var selectedPerson = Person(firstName: String())
 
@@ -45,5 +48,16 @@ class DetailViewController: UITableViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func cameraButtonPressed(sender: AnyObject) {
+        if
+        UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
+            self.imagePickerController.delegate = self
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        let image = info[UIImagePickerControllerEditedImage] as UIImage
+       // self.imageView.image = image
+    }
 
 }
