@@ -26,11 +26,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
        
       
         //create some people
-        var person1 = Person(firstName: "Brad")
-        var person2 = Person(firstName: "Brad")
-        var person3 = Person(firstName: "Brad")
-        var person4 = Person(firstName: "Brad")
-        var person5 = Person(firstName: "Brad")
+        var person1 = Person(firstName: "Brad", lastName: "Johnson")
+        var person2 = Person(firstName: "Brad", lastName: "Johnson")
+        var person3 = Person(firstName: "Brad", lastName: "Johnson")
+        var person4 = Person(firstName: "Brad", lastName: "Johnson")
+        var person5 = Person(firstName: "Brad", lastName: "Johnson")
+        
         //add them to the array
         self.people = [person1, person2, person3, person4, person5]
     
@@ -48,7 +49,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var personToDisplay = self.people[indexPath.row]
         
-        cell.textLabel.text = personToDisplay.firstName
+        //show the fullname in each cell
+        cell.textLabel.text = personToDisplay.fullName()
         
         return cell
     }

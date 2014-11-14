@@ -6,16 +6,26 @@
 //  Copyright (c) 2014 Scott Kendall. All rights reserved.
 //
 
-import Foundation
-import UIKit
+import UIKit //UIKit also imports Foundation
 
 
-struct Person {
-    let firstName : String
+class Person {
+    var firstName : String
+    var lastName : String
+    // var image : UIImage?
     
-    // default init()
     
-    init (firstName: String) {
+    init (firstName: String, lastName: String) {
         self.firstName = firstName
+        self.lastName = lastName
+    }
+    
+    init(){
+        self.firstName = "john"
+        self.lastName  = "doe"
+    }
+    
+    func fullName() -> String {
+        return "\(firstName) \(lastName)"
     }
 }

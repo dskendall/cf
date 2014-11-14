@@ -72,7 +72,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Unknown.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CNb-Ta-ytz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CNb-Ta-ytz">
                                 <rect key="frame" x="200" y="195" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="DD0-nh-UuB"/>
@@ -83,13 +83,16 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="qXG-dD-5zb"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjn-mt-CZT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjn-mt-CZT">
                                 <rect key="frame" x="246" y="81" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-TC-txt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-TC-txt">
                                 <rect key="frame" x="246" y="137" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ecg-xP-Gc9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -105,8 +108,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="leading" secondItem="KHF-HF-Qpv" secondAttribute="leading" constant="246" id="2AR-Ye-fzM"/>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="top" secondItem="KHF-HF-Qpv" secondAttribute="top" constant="137" id="Tlm-0V-Rtg"/>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="leading" secondItem="xjn-mt-CZT" secondAttribute="leading" id="YjE-xi-HwB"/>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="trailing" secondItem="xjn-mt-CZT" secondAttribute="trailing" id="bqR-vj-LtL"/>
                             <constraint firstAttribute="centerX" secondItem="CNb-Ta-ytz" secondAttribute="centerX" id="fGY-Lc-ypg"/>
                             <constraint firstItem="CNb-Ta-ytz" firstAttribute="top" secondItem="kAC-TC-txt" secondAttribute="bottom" constant="28" id="nL7-d2-Uiw"/>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="top" secondItem="xjn-mt-CZT" secondAttribute="bottom" constant="26" id="rPE-dR-pMD"/>
                         </constraints>
                     </view>
                     <connections>
