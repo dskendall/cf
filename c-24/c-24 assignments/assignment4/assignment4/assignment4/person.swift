@@ -12,7 +12,7 @@ import UIKit //UIKit also imports Foundation
 class Person {
     var firstName : String
     var lastName : String
-    // var image : UIImage?
+    var image : UIImage?
     
     
     init (firstName: String, lastName: String) {

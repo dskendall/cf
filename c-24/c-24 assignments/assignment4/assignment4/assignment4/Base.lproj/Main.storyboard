@@ -91,13 +91,19 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-TC-txt">
                                 <rect key="frame" x="246" y="137" width="97" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="eHB-2y-xWg"/>
                                     <constraint firstAttribute="width" constant="97" id="ecg-xP-Gc9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ecg-xP-Gc9"/>
+                                    </mask>
+                                </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovJ-kH-AFH">
-                                <rect key="frame" x="277" y="524" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovJ-kH-AFH">
+                                <rect key="frame" x="277" y="445" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -109,13 +115,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kAC-TC-txt" firstAttribute="leading" secondItem="KHF-HF-Qpv" secondAttribute="leading" constant="246" id="2AR-Ye-fzM"/>
+                            <constraint firstItem="xjn-mt-CZT" firstAttribute="top" secondItem="wTM-xN-qWb" secondAttribute="bottom" constant="17" id="FbU-Yk-ims"/>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="leading" secondItem="xjn-mt-CZT" secondAttribute="leading" id="HAL-SY-Yk3"/>
+                            <constraint firstItem="ovJ-kH-AFH" firstAttribute="top" secondItem="CNb-Ta-ytz" secondAttribute="bottom" constant="50" id="Mpz-Zl-jdi"/>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="trailing" secondItem="xjn-mt-CZT" secondAttribute="trailing" id="N7U-ip-vhf"/>
                             <constraint firstItem="kAC-TC-txt" firstAttribute="top" secondItem="KHF-HF-Qpv" secondAttribute="top" constant="137" id="Tlm-0V-Rtg"/>
+                            <constraint firstAttribute="centerX" secondItem="xjn-mt-CZT" secondAttribute="centerX" constant="5.5" id="Xjw-py-CWE"/>
                             <constraint firstItem="kAC-TC-txt" firstAttribute="leading" secondItem="xjn-mt-CZT" secondAttribute="leading" id="YjE-xi-HwB"/>
                             <constraint firstItem="kAC-TC-txt" firstAttribute="trailing" secondItem="xjn-mt-CZT" secondAttribute="trailing" id="bqR-vj-LtL"/>
                             <constraint firstAttribute="centerX" secondItem="CNb-Ta-ytz" secondAttribute="centerX" id="fGY-Lc-ypg"/>
+                            <constraint firstAttribute="centerX" secondItem="ovJ-kH-AFH" secondAttribute="centerX" id="fZa-3X-ATA"/>
                             <constraint firstItem="CNb-Ta-ytz" firstAttribute="top" secondItem="kAC-TC-txt" secondAttribute="bottom" constant="28" id="nL7-d2-Uiw"/>
+                            <constraint firstItem="kAC-TC-txt" firstAttribute="top" secondItem="xjn-mt-CZT" secondAttribute="bottom" constant="26" id="odO-Bz-NyC"/>
                             <constraint firstItem="kAC-TC-txt" firstAttribute="top" secondItem="xjn-mt-CZT" secondAttribute="bottom" constant="26" id="rPE-dR-pMD"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2AR-Ye-fzM"/>
+                                <exclude reference="YjE-xi-HwB"/>
+                                <exclude reference="bqR-vj-LtL"/>
+                                <exclude reference="rPE-dR-pMD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="firstNameTextField" destination="xjn-mt-CZT" id="SHc-DU-l9k"/>
