@@ -36,7 +36,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         self.lastNameTextField.text = self.selectedPerson.lastName
         
         //formatting
-        self.view.backgroundColor = UIColor.blueColor()
+        self.view.backgroundColor = UIColor(red:0.94, green:0.94, blue:0.94, alpha:1.0)
     }
     
     
