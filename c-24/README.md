@@ -1,4 +1,4 @@
-Amazing iOS coding exercises by Scott Kendall with help from too many people to name
+Amazing iOS coding exercises by Scott Kendall with help from an incredible number of contributors.
 
 ==
 
