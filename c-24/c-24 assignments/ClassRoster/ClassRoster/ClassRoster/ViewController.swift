@@ -12,15 +12,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var people = [Person]()
     
-    //insert Outlet
+    //insert Outlet (step 1. set class of ViewController with Table view on it to ViewController, step 2. ctrl-drag from the Table View to ViewController.swift to create an outlet (in this case named it tableView)
     
-    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //give a title to the first view
-        self.title = "C24-F2-SEA-11-14-WTF"
+        self.title = "Class Rooster"
         
         self.tableView.dataSource = self
         self.tableView.delegate = self

@@ -15,6 +15,7 @@
 		6905F7761A16BCBE00C1F293 /* ClassRosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7751A16BCBE00C1F293 /* ClassRosterTests.swift */; };
 		6905F7831A16BD3400C1F293 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7821A16BD3400C1F293 /* Person.swift */; };
 		6905F7851A16BE1900C1F293 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7841A16BE1900C1F293 /* DetailViewController.swift */; };
+		69D4EC791A1A89F500D25A6C /* user-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69D4EC781A1A89F500D25A6C /* user-default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6905F7751A16BCBE00C1F293 /* ClassRosterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRosterTests.swift; sourceTree = "<group>"; };
 		6905F7821A16BD3400C1F293 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		6905F7841A16BE1900C1F293 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		69D4EC781A1A89F500D25A6C /* user-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-default.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				6905F7631A16BCBE00C1F293 /* Main.storyboard */,
 				6905F7681A16BCBE00C1F293 /* LaunchScreen.xib */,
+				69D4EC781A1A89F500D25A6C /* user-default.png */,
 				6905F7661A16BCBE00C1F293 /* Images.xcassets */,
 			);
 			name = View;
@@ -222,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D4EC791A1A89F500D25A6C /* user-default.png in Resources */,
 				6905F7651A16BCBE00C1F293 /* Main.storyboard in Resources */,
 				6905F76A1A16BCBE00C1F293 /* LaunchScreen.xib in Resources */,
 				6905F7671A16BCBE00C1F293 /* Images.xcassets in Resources */,
@@ -437,6 +441,7 @@
 				6905F77B1A16BCBE00C1F293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6905F77C1A16BCBE00C1F293 /* Build configuration list for PBXNativeTarget "ClassRosterTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +450,7 @@
 				6905F77E1A16BCBE00C1F293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

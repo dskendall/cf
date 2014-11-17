@@ -12,7 +12,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     
     // INSERT outlets for text field
 
+    @IBOutlet weak var firstNameTextField: UITextField!
     
+    @IBOutlet weak var lastNameTextField: UITextField!
     
     //vars
     var selectedPerson = Person()
@@ -34,7 +36,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         self.lastNameTextField.text = self.selectedPerson.lastName
         
         //formatting
-        self.view.backgroundColor = UIColor.greenColor()
+        self.view.backgroundColor = UIColor.blueColor()
     }
     
     
