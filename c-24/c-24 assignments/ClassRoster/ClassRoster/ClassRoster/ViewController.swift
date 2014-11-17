@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
         //give a title to the first view
-        self.title = "Class Rooster"
+        self.title = "Class Roooster"
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -28,11 +28,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         //create some people
-        var person1 = Person(firstName: "Brad", lastName: "Johnson")
-        var person2 = Person(firstName: "Brad", lastName: "Johnson")
-        var person3 = Person(firstName: "Brad", lastName: "Johnson")
-        var person4 = Person(firstName: "Brad", lastName: "Johnson")
-        var person5 = Person(firstName: "Brad", lastName: "Johnson")
+        var person1 = Person(firstName: "Bradass", lastName: "Johnson")
+        var person2 = Person(firstName: "Bradapple", lastName: "John")
+        var person3 = Person(firstName: "Randy", lastName: "Son")
+        var person4 = Person(firstName: "Candy", lastName: "Hanson")
+        var person5 = Person(firstName: "Sandy", lastName: "Anson")
         
         //add them to the array
         self.people = [person1, person2, person3, person4, person5]

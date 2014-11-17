@@ -10,11 +10,11 @@ import UIKit
 
 class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    // INSERT outlets for text field
+    // outlets
 
     @IBOutlet weak var firstNameTextField: UITextField!
-    
     @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
     
     //vars
     var selectedPerson = Person()
@@ -27,7 +27,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         
         self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
-        
         self.title = self.selectedPerson.firstName
         
         
@@ -48,15 +47,21 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     
     
     @IBAction func cameraButtonPressed(sender: AnyObject) {
-        if
-            UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
-                self.imagePickerController.delegate = self
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
+            self.imagePickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.imagePickerController.delegate = self
+            self.imagePickerController.allowsEditing = true
+            self.presentViewController(self.imagePickerController, animated: true, completion: nil)
         }
+
     }
+
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         let image = info[UIImagePickerControllerEditedImage] as UIImage
-        // self.imageView.image = image
+        self.imageView.image = image
+        
+        imagePickerController.dismissViewControllerAnimated(true, completion: nil)
     }
     
 }

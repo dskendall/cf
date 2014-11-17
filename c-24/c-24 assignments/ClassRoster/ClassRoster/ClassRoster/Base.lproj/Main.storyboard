@@ -79,19 +79,31 @@
                                     <constraint firstAttribute="width" constant="200" id="zjW-BW-h8U"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibp-2D-9E4">
+                                <rect key="frame" x="258" y="356" width="85" height="30"/>
+                                <state key="normal" title="Add a photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="Nrw-ZM-DLa" eventType="touchUpInside" id="XkS-ft-b5n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wt3-k4-TzF" firstAttribute="top" secondItem="DEd-sR-bUX" secondAttribute="bottom" constant="8" id="0bg-RT-bys"/>
                             <constraint firstItem="Xi2-sT-jSl" firstAttribute="top" secondItem="wt3-k4-TzF" secondAttribute="bottom" constant="8" id="0y5-gF-QVI"/>
+                            <constraint firstAttribute="centerX" secondItem="Ibp-2D-9E4" secondAttribute="centerX" id="FWb-7x-07g"/>
                             <constraint firstAttribute="centerX" secondItem="Xi2-sT-jSl" secondAttribute="centerX" id="Jnz-lx-aWi"/>
                             <constraint firstAttribute="centerX" secondItem="iKc-Fj-8Ag" secondAttribute="centerX" id="Sf2-Sb-c8M"/>
                             <constraint firstItem="iKc-Fj-8Ag" firstAttribute="top" secondItem="Xi2-sT-jSl" secondAttribute="bottom" constant="8" id="VsN-VH-knC"/>
                             <constraint firstAttribute="centerX" secondItem="wt3-k4-TzF" secondAttribute="centerX" id="ktj-s4-3u7"/>
+                            <constraint firstItem="Ibp-2D-9E4" firstAttribute="top" secondItem="iKc-Fj-8Ag" secondAttribute="bottom" constant="8" id="wxE-Ka-bwy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="firstNameTextField" destination="wt3-k4-TzF" id="Kw0-6G-7z7"/>
+                        <outlet property="imageView" destination="iKc-Fj-8Ag" id="akW-nj-Dog"/>
                         <outlet property="lastNameTextField" destination="Xi2-sT-jSl" id="1Pu-Vx-hl2"/>
                     </connections>
                 </viewController>
