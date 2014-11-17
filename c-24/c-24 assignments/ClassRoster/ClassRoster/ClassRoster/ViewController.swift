@@ -29,10 +29,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //create some people
         var person1 = Person(firstName: "Bradass", lastName: "Johnson")
-        var person2 = Person(firstName: "Bradapple", lastName: "John")
-        var person3 = Person(firstName: "Randy", lastName: "Son")
-        var person4 = Person(firstName: "Candy", lastName: "Hanson")
-        var person5 = Person(firstName: "Sandy", lastName: "Anson")
+        var person2 = Person(firstName: "Bradapple", lastName: "Crab")
+        var person3 = Person(firstName: "Randy", lastName: "Mofo")
+        var person4 = Person(firstName: "Athol", lastName: "Mass")
+        var person5 = Person(firstName: "Sandy", lastName: "Anuse")
         
         //add them to the array
         self.people = [person1, person2, person3, person4, person5]
@@ -53,6 +53,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //show the fullname in each cell
         cell.textLabel.text = personToDisplay.fullName()
+        cell.textLabel.font = UIFont(name: "Zapfino", size: 10)
         
         return cell
     }
