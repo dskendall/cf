@@ -21,14 +21,16 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     var imagePickerController = UIImagePickerController()
     
     
-    
+   //viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
         self.title = self.selectedPerson.firstName
-        
+        if self.selectedPerson.image != nil {
+           self.imageView.image = self.selectedPerson.image
+        }
         
         //populate text fields
         self.firstNameTextField.text = self.selectedPerson.firstName
@@ -60,7 +62,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         let image = info[UIImagePickerControllerEditedImage] as UIImage
         self.imageView.image = image
-        
+        self.selectedPerson.image = image
         imagePickerController.dismissViewControllerAnimated(true, completion: nil)
     }
     
