@@ -27,7 +27,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhW-x2-V3z" id="r4m-OF-y0F">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-2A-spJ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-default.png" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-2A-spJ">
                                                     <rect key="frame" x="8" y="5" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="940-Br-jia"/>
@@ -35,7 +35,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUr-wH-ShW">
-                                                    <rect key="frame" x="86" y="5" width="42" height="21"/>
+                                                    <rect key="frame" x="86" y="23" width="42" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="dTr-LI-D67"/>
                                                     </constraints>
@@ -44,7 +44,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvd-2u-7na">
-                                                    <rect key="frame" x="86" y="26" width="42" height="29"/>
+                                                    <rect key="frame" x="86" y="52" width="42" height="14"/>
                                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -53,14 +53,14 @@
                                             <constraints>
                                                 <constraint firstItem="jvd-2u-7na" firstAttribute="top" secondItem="iUr-wH-ShW" secondAttribute="bottom" constant="15" id="5FN-XI-L1L"/>
                                                 <constraint firstItem="iUr-wH-ShW" firstAttribute="leading" secondItem="zRf-2A-spJ" secondAttribute="trailing" constant="8" id="9eg-EE-Gg4"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="jvd-2u-7na" secondAttribute="bottom" constant="16.5" id="Kx4-VS-CVx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jvd-2u-7na" secondAttribute="bottom" constant="6" id="Kx4-VS-CVx"/>
                                                 <constraint firstItem="iUr-wH-ShW" firstAttribute="leading" secondItem="zRf-2A-spJ" secondAttribute="leading" constant="8" id="ahS-fG-lGm"/>
                                                 <constraint firstItem="jvd-2u-7na" firstAttribute="leading" secondItem="iUr-wH-ShW" secondAttribute="leading" id="bqM-eK-F70"/>
                                                 <constraint firstItem="jvd-2u-7na" firstAttribute="top" secondItem="r4m-OF-y0F" secondAttribute="topMargin" constant="15" id="bsw-5j-XtO"/>
                                                 <constraint firstItem="zRf-2A-spJ" firstAttribute="top" secondItem="r4m-OF-y0F" secondAttribute="topMargin" constant="-3" id="fyv-YW-uQm"/>
-                                                <constraint firstItem="jvd-2u-7na" firstAttribute="top" secondItem="iUr-wH-ShW" secondAttribute="bottom" id="nNm-Se-tAQ"/>
+                                                <constraint firstItem="jvd-2u-7na" firstAttribute="top" secondItem="iUr-wH-ShW" secondAttribute="bottom" constant="8" id="nNm-Se-tAQ"/>
                                                 <constraint firstItem="zRf-2A-spJ" firstAttribute="leading" secondItem="r4m-OF-y0F" secondAttribute="leadingMargin" id="nOc-uI-v3h"/>
-                                                <constraint firstItem="iUr-wH-ShW" firstAttribute="top" secondItem="zRf-2A-spJ" secondAttribute="top" id="sYW-Cx-Rs0"/>
+                                                <constraint firstItem="iUr-wH-ShW" firstAttribute="top" secondItem="zRf-2A-spJ" secondAttribute="top" constant="18" id="sYW-Cx-Rs0"/>
                                                 <constraint firstItem="iUr-wH-ShW" firstAttribute="trailing" secondItem="jvd-2u-7na" secondAttribute="trailing" id="w9d-TF-LOs"/>
                                             </constraints>
                                             <variation key="default">
