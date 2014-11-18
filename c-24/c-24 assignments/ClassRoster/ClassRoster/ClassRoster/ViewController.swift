@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
         //give a title to the first view
-        self.title = "Class Roooster"
+        self.title = "iOS Class Roster"
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -47,13 +47,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as PersonTableViewCell
         
         var personToDisplay = self.people[indexPath.row]
         
-        //show the fullname in each cell
-        cell.textLabel.text = personToDisplay.fullName()
-        cell.textLabel.font = UIFont(name: "Zapfino", size: 10)
+        //show cell content
+        cell.nameLabel.text = personToDisplay.fullName()
+        cell.subNameLabel.text = "Seattle"
+        cell.personImageView.backgroundColor = UIColor.blueColor()
+        
+       // cell.nameLabel.font = UIFont(name: "Zapfino", size: 10)
         
         return cell
     }

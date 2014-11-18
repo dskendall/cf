@@ -15,6 +15,7 @@
 		6905F7761A16BCBE00C1F293 /* ClassRosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7751A16BCBE00C1F293 /* ClassRosterTests.swift */; };
 		6905F7831A16BD3400C1F293 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7821A16BD3400C1F293 /* Person.swift */; };
 		6905F7851A16BE1900C1F293 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7841A16BE1900C1F293 /* DetailViewController.swift */; };
+		69704C4C1A1C004100327C3A /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69704C4B1A1C004100327C3A /* PersonTableViewCell.swift */; };
 		69D4EC791A1A89F500D25A6C /* user-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69D4EC781A1A89F500D25A6C /* user-default.png */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		6905F7751A16BCBE00C1F293 /* ClassRosterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRosterTests.swift; sourceTree = "<group>"; };
 		6905F7821A16BD3400C1F293 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		6905F7841A16BE1900C1F293 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		69704C4B1A1C004100327C3A /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		69D4EC781A1A89F500D25A6C /* user-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-default.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 			children = (
 				6905F7611A16BCBE00C1F293 /* ViewController.swift */,
 				6905F7841A16BE1900C1F293 /* DetailViewController.swift */,
+				69704C4B1A1C004100327C3A /* PersonTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				6905F7831A16BD3400C1F293 /* Person.swift in Sources */,
 				6905F7621A16BCBE00C1F293 /* ViewController.swift in Sources */,
 				6905F7601A16BCBE00C1F293 /* AppDelegate.swift in Sources */,
+				69704C4C1A1C004100327C3A /* PersonTableViewCell.swift in Sources */,
 				6905F7851A16BE1900C1F293 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
