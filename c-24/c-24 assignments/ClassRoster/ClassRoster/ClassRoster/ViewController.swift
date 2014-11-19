@@ -21,13 +21,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //give a title to the first view
         self.title = "iOS Class Roster"
-        
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.loadFromPlist()
         
         
-        
-        //create some people
+        /* create some people - old way
         var person1 = Person(firstName: "Bradass", lastName: "Johnson")
         var person2 = Person(firstName: "Bradapple", lastName: "Crab")
         var person3 = Person(firstName: "Randy", lastName: "Mofo")
@@ -36,9 +35,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //add them to the array
         self.people = [person1, person2, person3, person4, person5]
-        
+     */
     }
     
+    func loadFromPlist(){
+        let plistURL = NSBundle.mainBundle().pathForResource("Roster", ofType: "plist")
+        let plistArray = NSArray(contentsOfFile: plistURL!)
+        for object in plistArray! {
+            if let personDictionary = object as? NSDictionary {
+                let firstNameFromPlist = personDictionary["First Name"] as String
+                let lastNameFromPlist = personDictionary["Last Name"] as String
+                var person = Person(firstName: firstNameFromPlist, lastName: lastNameFromPlist)
+                self.people.append(person)
+            }
+        }
+    }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
