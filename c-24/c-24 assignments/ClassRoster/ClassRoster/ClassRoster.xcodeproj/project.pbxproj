@@ -16,6 +16,7 @@
 		6905F7831A16BD3400C1F293 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7821A16BD3400C1F293 /* Person.swift */; };
 		6905F7851A16BE1900C1F293 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905F7841A16BE1900C1F293 /* DetailViewController.swift */; };
 		69704C4C1A1C004100327C3A /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69704C4B1A1C004100327C3A /* PersonTableViewCell.swift */; };
+		69704C4E1A1C15F900327C3A /* Roster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69704C4D1A1C15F900327C3A /* Roster.plist */; };
 		69D4EC791A1A89F500D25A6C /* user-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69D4EC781A1A89F500D25A6C /* user-default.png */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		6905F7821A16BD3400C1F293 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		6905F7841A16BE1900C1F293 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		69704C4B1A1C004100327C3A /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		69704C4D1A1C15F900327C3A /* Roster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Roster.plist; sourceTree = "<group>"; };
 		69D4EC781A1A89F500D25A6C /* user-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-default.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				6905F75E1A16BCBE00C1F293 /* Info.plist */,
+				69704C4D1A1C15F900327C3A /* Roster.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				69D4EC791A1A89F500D25A6C /* user-default.png in Resources */,
 				6905F7651A16BCBE00C1F293 /* Main.storyboard in Resources */,
 				6905F76A1A16BCBE00C1F293 /* LaunchScreen.xib in Resources */,
+				69704C4E1A1C15F900327C3A /* Roster.plist in Resources */,
 				6905F7671A16BCBE00C1F293 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
