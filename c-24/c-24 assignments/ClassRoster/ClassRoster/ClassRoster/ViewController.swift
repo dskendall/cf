@@ -38,6 +38,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
      */
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
+    
     func loadFromPlist(){
         let plistURL = NSBundle.mainBundle().pathForResource("Roster", ofType: "plist")
         let plistArray = NSArray(contentsOfFile: plistURL!)
@@ -66,7 +71,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.nameLabel.text = personToDisplay.fullName()
         cell.subNameLabel.text = "Seattle"
         cell.personImageView.backgroundColor = UIColor.blueColor()
-        
+        cell.personImageView.image = personToDisplay.image
        // cell.nameLabel.font = UIFont(name: "Zapfino", size: 10)
         
         return cell

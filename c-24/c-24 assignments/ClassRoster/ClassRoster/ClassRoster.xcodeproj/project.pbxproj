@@ -125,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				6905F7631A16BCBE00C1F293 /* Main.storyboard */,
+				69704C4B1A1C004100327C3A /* PersonTableViewCell.swift */,
 				6905F7681A16BCBE00C1F293 /* LaunchScreen.xib */,
 				69D4EC781A1A89F500D25A6C /* user-default.png */,
 				6905F7661A16BCBE00C1F293 /* Images.xcassets */,
@@ -137,7 +138,6 @@
 			children = (
 				6905F7611A16BCBE00C1F293 /* ViewController.swift */,
 				6905F7841A16BE1900C1F293 /* DetailViewController.swift */,
-				69704C4B1A1C004100327C3A /* PersonTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
