@@ -71,7 +71,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.nameLabel.text = personToDisplay.fullName()
         cell.subNameLabel.text = "Seattle"
         cell.personImageView.backgroundColor = UIColor.blueColor()
-        cell.personImageView.image = personToDisplay.image
+        
+        if personToDisplay.image != nil {
+            cell.personImageView.image = personToDisplay.image
+        }
+        
        // cell.nameLabel.font = UIFont(name: "Zapfino", size: 10)
         
         return cell
