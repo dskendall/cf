@@ -29,12 +29,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
 
         
+        self.loadFromPlist()
         
         //give a title to the first view
         self.title = "iOS Class Roster"
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.loadFromPlist()
+       
         
         
         /* create some people - old way
@@ -56,7 +57,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     
-    
+    //using NSKeyedArchiver/Unarchiver to save people
     func loadFromArchive() -> [Person]? {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         
@@ -66,8 +67,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return nil
     }
     
-    
-    
     func saveToArchive() {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         NSKeyedArchiver.archiveRootObject(self.people, toFile: documentsPath + "/archive")
@@ -75,7 +74,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     
     
-    func loadFromPlist(){
+    
+    func loadFromPlist() {
         let plistURL = NSBundle.mainBundle().pathForResource("Roster", ofType: "plist")
         let plistArray = NSArray(contentsOfFile: plistURL!)
         for object in plistArray! {
@@ -87,9 +87,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
-    
-    
-   
     
     
 

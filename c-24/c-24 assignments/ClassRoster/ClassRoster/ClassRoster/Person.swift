@@ -9,7 +9,7 @@
 import UIKit //UIKit also imports Foundation
 
 
-class Person {
+class Person : NSObject, NSCoding {
     var firstName : String
     var lastName : String
     var image : UIImage?
@@ -22,7 +22,7 @@ class Person {
     
     
     //for some reason vars need initial values (selectedPerson freaks out)
-    init(){
+    override init(){
         self.firstName = "john"
         self.lastName  = "doe"
     }
