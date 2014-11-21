@@ -20,11 +20,32 @@ class Person {
         self.lastName = lastName
     }
     
+    
     //for some reason vars need initial values (selectedPerson freaks out)
     init(){
         self.firstName = "john"
         self.lastName  = "doe"
     }
+    
+    required init(coder aDecoder: NSCoder) {
+        self.firstName = aDecoder.decodeObjectForKey("firstName") as String
+        self.lastName = aDecoder.decodeObjectForKey("lastName") as String
+        if let decodedImage = aDecoder.decodeObjectForKey("image") as? UIImage {
+            self.image = decodedImage
+        }
+    }
+    
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(self.firstName, forKey: "firstName")
+        aCoder.encodeObject(self.lastName, forKey: "lastName")
+        if self.image != nil {
+            aCoder.encodeObject(self.image!, forKey: "image")
+        } else {
+            aCoder.encodeObject(nil, forKey: "image")
+        }
+    }
+
     
     func fullName() -> String {
         return "\(firstName) \(lastName)"

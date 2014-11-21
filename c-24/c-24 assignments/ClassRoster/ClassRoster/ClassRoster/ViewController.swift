@@ -10,14 +10,25 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+   //insert Outlet (step 1. set class of ViewController with Table view on it to ViewController, step 2. ctrl-drag from the Table View to ViewController.swift to create an outlet (in this case named it tableView)
+    @IBOutlet weak var tableView: UITableView!
+    
     var people = [Person]()
     
-    //insert Outlet (step 1. set class of ViewController with Table view on it to ViewController, step 2. ctrl-drag from the Table View to ViewController.swift to create an outlet (in this case named it tableView)
     
-    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        if let peopleFromArchive = self.loadFromArchive() as [Person]? {
+            self.people = peopleFromArchive
+        } else {
+            self.loadFromPlist()
+            self.saveToArchive()
+        }
+
+        
         
         //give a title to the first view
         self.title = "iOS Class Roster"
@@ -41,7 +52,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tableView.reloadData()
+        self.saveToArchive()
     }
+    
+    
+    
+    func loadFromArchive() -> [Person]? {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        
+        if let peopleFromArchive = NSKeyedUnarchiver.unarchiveObjectWithFile(documentsPath + "/archive") as? [Person] {
+            return peopleFromArchive
+        }
+        return nil
+    }
+    
+    
+    
+    func saveToArchive() {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        NSKeyedArchiver.archiveRootObject(self.people, toFile: documentsPath + "/archive")
+    }
+
+    
     
     func loadFromPlist(){
         let plistURL = NSBundle.mainBundle().pathForResource("Roster", ofType: "plist")
@@ -57,6 +89,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     
+   
+    
+    
+
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.people.count
     }
@@ -70,8 +108,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //show cell content
         cell.nameLabel.text = personToDisplay.fullName()
         cell.subNameLabel.text = "Seattle"
-        cell.personImageView.backgroundColor = UIColor.blueColor()
-        
+        //cell.personImageView.backgroundColor = UIColor.blueColor()
         if personToDisplay.image != nil {
             cell.personImageView.image = personToDisplay.image
         }
